@@ -1,17 +1,9 @@
-name: CI
 
-on:
-  push:
-    branches: [master]
-
+name: hello-world
+on: push
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
-
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE
-      - uses: actions/checkout@v2
-      - name: create a dir
-        run: mkdir download
-      - name: list
-        run: ls -ltr
+      - name: my-step
+        run: echo "Hello World!"
