@@ -7,3 +7,9 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+      - name: create a dir
+        run: mkdir newdir
+             cd newdir
+             touch a b c d
+             ls -ltr
+             
