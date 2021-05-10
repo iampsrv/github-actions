@@ -11,5 +11,6 @@ jobs:
         run: mkdir newdir
              cd newdir
              touch a b c d
-             ls -ltr
+      - name: list
+        run: ls
              
