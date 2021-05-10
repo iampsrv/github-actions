@@ -8,7 +8,7 @@ jobs:
       - name: my-step
         run: echo "Hello World!"
       - name: create a dir
-        run: mkdir newdir
+        run: mkdir new
              cd newdir
              touch a b c d
       - name: list
